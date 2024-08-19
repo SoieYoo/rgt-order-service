@@ -1,0 +1,17 @@
+### 로그인
+POST http://rgt-env.eba-puqnjqpx.ap-northeast-2.elasticbeanstalk.com/login
+Content-Type: application/json
+
+{
+  "username": "user111",
+  "password" : "user111"
+}
+
+### 주문
+POST http://rgt-env.eba-puqnjqpx.ap-northeast-2.elasticbeanstalk.com/api/orders
+access: eyJhbGciOiJIUzI1NiJ9.eyJjYXRlZ29yeSI6ImFjY2VzcyIsInVzZXJuYW1lIjoidXNlcjExMSIsInJvbGUiOiJST0xFX1VTRVIiLCJpYXQiOjE3MjQwNjQ2MjUsImV4cCI6MTcyNDA2NTIyNX0.WEaYsIlC4lN5_5W91vH5VNs91DViO7aC8x4yHiT6VLg
+Content-Type: application/json
+
+{
+  "tableId": 1
+}
