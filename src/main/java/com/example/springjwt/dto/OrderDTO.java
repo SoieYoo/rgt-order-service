@@ -4,13 +4,17 @@ import com.example.springjwt.entity.Order;
 import com.example.springjwt.entity.OrderItem;
 import java.util.List;
 import java.util.stream.Collectors;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
 @Setter
 @Builder
+@AllArgsConstructor
+@NoArgsConstructor
 public class OrderDTO {
     private Long orderId;
     private Long tableId;
